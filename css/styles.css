@@ -2,7 +2,7 @@
 
 
 #title {
-  background-color:  #ef8172;
+  background-color:  #ff4c68;
   color: #fff;
 }
 
@@ -11,13 +11,17 @@
   /* IE 9 */
   -webkit-transform: rotate(25deg);
   /* Safari 3-8 */
+  -moz-transform:rotate(25deg);
   transform: rotate(25deg);
   width: 60%;
   position: absolute;
   right: 30%;
 }
 
-h1 {
+
+
+.big-heading {
+
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;
   font-size: 3.5rem;
@@ -47,9 +51,6 @@ body {
   padding: 3% 15%;
 }
 
-.header {
-  /* width:50%; */
-}
 
 .download-button {
   margin: 5% 3% 5% 0;
@@ -97,19 +98,19 @@ body {
 
 .feature-item-icon {
   font-size: 4rem;
-  color: #ef8172;
+  color: #ff4c68;
   margin-bottom: 10px;
 }
 
 .feature-item-icon:hover {
-  color:#ff4c68;
+  opacity: 0.5;
 }
 
 /* Testimonials Section */
 
 #testimonials {
   text-align:center;
-  background-color: #ef8172;
+  background-color:#ef8172;
   color: #fff;
 
 }
@@ -152,13 +153,52 @@ padding: 3% 2%;
 
 }
 
-@media (max-width:1028px) {
+/* Call to Action */
+
+#cta{
+  text-align: center;
+  background-color:#ff4c68;
+  color:#fff;
+}
+
+.cta-title {
+  width:60%;
+  padding: 50px 50px 0;
+  margin: 5px auto 0;
+}
+
+
+/*Footer section */
+
+#footer {
+text-align:center;
+background-color: #fff;
+padding:10%;
+
+}
+
+.download-button-footer {
+
+  padding-bottom:50px;
+}
+
+.footer-icons {
+  margin-bottom: 20px;
+}
+
+.footer-icon {
+  margin:10px;
+}
+
+/* media */
+@media  (max-width:1028px) {
   #header-iphone{
-    -ms-transform: rotate(0deg);
+    -ms-transform: rotate(0);
+    -moz-transform: rotate(0);
     /* IE 9 */
-    -webkit-transform: rotate(0deg);
+    -webkit-transform: rotate(0);
     /* Safari 3-8 */
-    transform: rotate(0deg);
+    transform: rotate(0);
     width: 60%;
     position: static;
     margin: 10% 20%;
